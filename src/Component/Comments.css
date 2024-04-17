@@ -1,0 +1,21 @@
+.comments-container {
+  margin-top: 20px;
+}
+
+.comments-heading {
+  margin-bottom: 10px;
+}
+
+.comments-list {
+  padding: 5px;
+}
+
+.add-comment {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.add-comment > * {
+  flex: 1;
+}

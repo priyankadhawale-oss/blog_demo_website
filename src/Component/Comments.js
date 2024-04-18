@@ -3,7 +3,7 @@ import { Typography, List, ListItem, ListItemText, TextField, Button } from '@mu
 import './Comments.css';
 
 const Comments = ({ comments }) => {
-  //const [comments, setComments] = useState([]);
+
   const [newComment, setNewComment] = useState('');
   const [comment, setComments] = useState([]);
   const handleAddComment = () => {

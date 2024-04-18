@@ -16,8 +16,8 @@ const BlogList = ({ blogs }) => {
     setCurrentPage(page);
   };
   return (
-    <div>
-      <h2>Featured Blogs</h2>
+    <div >
+      <h2 style={{textAlign:'center', textShadow:'3px 3px 4px rgb(150, 115, 115)'}}>Featured Blogs</h2>
       <div className="blog-grid">
       {currentBlogs.map(blog => (
     <div className="blog" key={blog.id}>
@@ -27,7 +27,7 @@ const BlogList = ({ blogs }) => {
             }} className="read-more-link"> <h3>{blog.title}</h3></NavLink>
  
       <p>{blog.excerpt}</p>
-      <img src={blog.image} alt={blog.title} style={{height:'250px',width:'350px',margin:'20px' }}/> {/* Add photo */}
+      <img src={blog.image} alt={blog.title} style={{height:'200px',width:'300px',margin:'20px' }}/> 
       <p>Publication Date: {blog.publicationDate}</p>
       
          </div>

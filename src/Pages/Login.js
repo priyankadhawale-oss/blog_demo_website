@@ -1,7 +1,7 @@
 // Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Login.css'; // Import CSS file
+import './Login.css'; 
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -10,13 +10,10 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Implement authentication logic here (e.g., validate username and password)
-    // For demonstration purposes, let's assume the user is authenticated if both fields are non-empty
+    
     if (username && password) {
-      // Redirect to home page after successful login
       navigate('/');
     } else {
-      // Show error message if credentials are invalid
       alert('Invalid username or password');
     }
   };

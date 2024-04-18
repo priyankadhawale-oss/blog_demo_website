@@ -16,6 +16,11 @@
   gap: 10px;
 }
 
-.add-comment > * {
+.add-comment {
+
   flex: 1;
+}
+.add-comment-button{
+  
+  margin-top: 10px;
 }

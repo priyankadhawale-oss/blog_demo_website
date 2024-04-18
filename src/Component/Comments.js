@@ -25,14 +25,18 @@ const Comments = ({ comments }) => {
       <div className="add-comment">
         <TextField
           label="Add a comment"
+          multiline
+          rows={3}
+          maxRows={4}
           variant="outlined"
           value={newComment}
           onChange={(e) => setNewComment(e.target.value)}
           fullWidth
-        />
+        /></div>
+        <div className='add-comment-button'>
         <Button variant="contained" color="primary" onClick={handleAddComment}>Add Comment</Button>
-        
-      </div>
+        </div>
+      
       <div>
       <List className="comments-list">
         {comment.map((comment, index) => (
